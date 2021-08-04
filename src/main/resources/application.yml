@@ -1,12 +1,20 @@
 micronaut:
+  server:
+    port: 8082
+    cors:
+      enabled: true
   application:
     name: productAPISub
+endpoints:
+  health:
+    enabled: true
 cassandra:
   default:
-    clusterName: '"myCluster"'
-    contactPoint: '"localhost"'
-    port: 9042
-    maxSchemaAgreementWaitSeconds: 20
-    ssl: true
+    basic:
+      contact-points:
+        - 172.17.0.2:9042
+      session-keyspace: product
+      load-balancing-policy:
+        local-datacenter: datacenter1
 nats.addresses:
-- nats://localhost:4222
+  - nats://localhost:4222
