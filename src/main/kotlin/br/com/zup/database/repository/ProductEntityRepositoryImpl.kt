@@ -1,4 +1,4 @@
-package br.com.zup.database.port
+package br.com.zup.database.repository
 
 import br.com.zup.database.entity.ProductEntity
 import com.datastax.oss.driver.api.core.CqlSession

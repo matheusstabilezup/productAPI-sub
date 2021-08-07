@@ -2,7 +2,7 @@ package br.com.zup.database.service
 
 import br.com.zup.core.port.ProductEntityServicePort
 import br.com.zup.database.entity.ProductEntity
-import br.com.zup.database.port.ProductEntityRepository
+import br.com.zup.database.repository.ProductEntityRepository
 import javax.inject.Singleton
 
 @Singleton
